@@ -2,9 +2,12 @@
   "name": "goran-lukic-fuel-me-task1",
   "version": "1.0.0",
   "description": "Practical assessment: Data aggregation pipeline",
-  "main": "index.js",
+  "main": ".dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"tsx src/index.ts",
+    "dev" : "tsx --watch src/index.ts",
+    "build" :"tsc -p .",
+    "start:node": "node dist/index.js"
   },
   "keywords": [],
   "author": "LG",
