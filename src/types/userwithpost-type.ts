@@ -1,13 +1,9 @@
-export interface UserPost {
-    id: number;
-    title: string;
-    body: string;
-}
+import { Post } from "./post-type";
 
 export interface UserWithPost {
     id: number;
     name: string;
     username: string;
     email:string;
-    posts: UserPost[];
+    posts: Post[];
 }
